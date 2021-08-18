@@ -2,4 +2,56 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.timeline-wrapper {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+  border-radius: 0.5em;
+}
+
+.timeline {
+  padding-right: 2rem;
+}
+
+.lane {
+  display: flex;
+  height: 1.5rem;
+  margin: 0.5rem 0;
+  position: relative;
+}
+
+.bar {
+  position: absolute;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  width: auto;
+  line-height: 1rem;
+  white-space: nowrap;
+  border-radius: 0.5em;
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.bar input {
+  background: none;
+  border: none;
+  appearance: none;
+}
+
+.bar:hover {
+  overflow: visible;
+  background: white;
 }
